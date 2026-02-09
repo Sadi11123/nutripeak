@@ -11,6 +11,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'MyFont';
+  src: url('../src/assets/Fonts/CanelaDeck-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
   padding: o;
   margin: o;

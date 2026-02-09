@@ -3,24 +3,24 @@ import Marquee from "react-fast-marquee";
 
 const TextSlider = () => {
   return (
-    <div className="bg-[#DEF57F]">
-      <ul class="flex text-xl gap-5 font-semibold py-5">
+    <div className="bg-[#DEF57F] h-18 flex">
+      <ul class="flex text-xl font-semibold items-center">
         <Marquee className="space-x-10">
-          <li class="flex items-center space-x-2 ml-4">
+          <li class="flex items-center">
             <span class="w-2 h-2 bg-black rounded-full inline-block"></span>
-            <span>VEGETARIAN DONE BETTER</span>
+            <span className="text-red-600 font-bold">VEGETARIAN DONE BETTER</span>
           </li>
           <li class="flex items-center space-x-2 ml-4">
             <span class="w-2 h-2 bg-black rounded-full inline-block"></span>
-            <span>BRINGING YOU THE BEST IN SNACKS, DESSERTS & DAIRY!</span>
+            <span className="text-black font-bold">BRINGING YOU THE BEST IN SNACKS, DESSERTS & DAIRY!</span>
           </li>
           <li class="flex items-center space-x-2 ml-4">
             <span class="w-2 h-2 bg-black rounded-full inline-block"></span>
-            <span>VEGETARIAN DONE BETTER</span>
+            <span className="text-black font-bold">VEGETARIAN DONE BETTER</span>
           </li>
           <li class="flex items-center space-x-2 ml-4">
             <span class="w-2 h-2 bg-black rounded-full inline-block"></span>
-            <span>BRINGING YOU THE BEST IN SNACKS, DESSERTS & DAIRY!</span>
+            <span className="text-black font-bold">BRINGING YOU THE BEST IN SNACKS, DESSERTS & DAIRY!</span>
           </li>
         </Marquee>
       </ul>

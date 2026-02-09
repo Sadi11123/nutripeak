@@ -72,28 +72,14 @@ const Hero = ({ activeSlide, index }) => {
                 with a taste you’ll actually look forward to.
               </p>
 
-              <motion.div className="flex gap-3 pt-10">
-                <motion.button
-                  whileHover={{
-                    y: [-0, -40, 0], // move left then back
-                    scale: [1, 1.2, 1], // scale up then back
-                  }}
-                  transition={{ duration: 0.6 }}
-                  className="text-lg font-medium text-black py-3 px-9 bg-white rounded-xl hover:bg-black hover:text-white duration-800 cursor-pointer"
-                >
+              <div className="flex gap-3 pt-10">
+                <button className="text-lg font-medium text-black py-3 px-9 bg-white rounded-xl hover:bg-black hover:text-white duration-800 cursor-pointer">
                   Shop Now
-                </motion.button>
-                <motion.button
-                  whileHover={{
-                    y: [-0, -40, 0], // move left then back
-                    scale: [1, 1.2, 1], // scale up then back
-                  }}
-                  transition={{ duration: 0.6 }}
-                  className="text-lg font-medium text-white py-3 px-9 rounded-xl border border-white  hover:bg-black hover:text-white duration-800 cursor-pointer"
-                >
+                </button>
+                <button className="text-lg font-medium text-white py-3 px-9 rounded-xl border border-white  hover:bg-black hover:text-white duration-800 cursor-pointer">
                   View Product
-                </motion.button>
-              </motion.div>
+                </button>
+              </div>
             </div>
           </div>
         </div>

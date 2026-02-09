@@ -8,7 +8,7 @@ import { useState } from "react";
 // import TextSlider from "../../components/TextSilder/TextSlider";
 
 const Home = () => {
-    const [activeSlide, setActiveSlide] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(0);
   return (
     <div className="h-screen">
       <Navbar />
@@ -26,9 +26,9 @@ const Home = () => {
         onChange={(index) => setActiveSlide(index)}
         // dynamicHeight={true} // adjust height based on content
       >
-        <Hero className="h-267" activeSlide={activeSlide} index={0} />
-        <Hero2 className="h-267" activeSlide={activeSlide} index={1} />
-        <Hero3 className="h-267" activeSlide={activeSlide} index={2}/>
+        <Hero activeSlide={activeSlide} index={0} />
+        <Hero2 activeSlide={activeSlide} index={1} />
+        <Hero3 activeSlide={activeSlide} index={2} />
       </Carousel>
     </div>
   );
