@@ -1,0 +1,30 @@
+/* Make carousel a positioning context */
+.carousel {
+  position: relative;
+}
+
+/* Move dots to bottom-right */
+.carousel .control-dots {
+  position: absolute;
+  bottom: 150px;
+  right: 80px;
+  left: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+/* Dot size */
+.carousel .control-dots .dot {
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  box-shadow: none;
+}
+
+/* Active dot (pill style like your image) */
+.carousel .control-dots .dot.selected {
+  width: 16px;
+  border-radius: 8px;
+}

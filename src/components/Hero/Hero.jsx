@@ -1,7 +1,8 @@
 import Hero1 from "../../assets/Media/hero-img/Hero-Img-one.png";
 import TextSlider from "../TextSilder/TextSlider";
+
 // eslint-disable-next-line
-import { motion, scale } from "framer-motion";
+import { easeOut, motion, scale } from "framer-motion";
 
 const textVariants = {
   hidden: { opacity: 0, scale: 0.2 },

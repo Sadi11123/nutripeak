@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { FiSearch, FiUser, FiShoppingBag } from "react-icons/fi";
 import { FaChevronDown } from "react-icons/fa";
+// eslint-disable-next-line
+import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
@@ -18,11 +20,11 @@ const Navbar = () => {
 
         {/* CENTER: MENU */}
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1 gap-6 font-medium text-lg">
-            <li><NavLink to="/shop">Shop All</NavLink></li>
-            <li><NavLink to="/bundle">Bundle Builder</NavLink></li>
-            <li><NavLink to="/about">About Us</NavLink></li>
-            <li><NavLink to="/reviews">Reviews</NavLink></li>
+          <ul className="menu menu-horizontal px-1 gap-6 font-medium text-lg ">
+            <motion.li whileHover={{scale:1.1}} className="hover:font-bold"><NavLink to="/shop">Shop All</NavLink></motion.li>
+            <motion.li whileHover={{scale:1.1}} className="hover:font-bold"><NavLink to="/bundle">Bundle Builder</NavLink></motion.li>
+            <motion.li whileHover={{scale:1.1}} className="hover:font-bold"><NavLink to="/about">About Us</NavLink></motion.li>
+            <motion.li whileHover={{scale:1.1}} className="hover:font-bold"><NavLink to="/reviews">Reviews</NavLink></motion.li>
           </ul>
         </div>
 
